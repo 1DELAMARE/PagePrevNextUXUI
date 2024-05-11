@@ -1,0 +1,91 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Tema escuro */
+    color: #ddd; /* Texto mais claro para contraste */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    max-width: 80%;
+    padding: 20px;
+    background-color: #f9f9f9; /* Tema claro */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; /* Texto mais escuro para contraste */
+    transition: transform 0.5s ease; /* Adicione a transição */
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a3b4c2; /* Cinza claro */
+    color: #333; /* Texto mais escuro para contraste */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000; /* Preto no hover */
+    color: #fff; /* Texto branco no hover */
+}
+
+/* Barra de progresso */
+.progress-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color:  #a3b4c2;;
+    border-radius: 5px;
+}
+
+/* Ícone de tema */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Tema claro */
+body.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Efeito de passagem de página */
+.content.next-page {
+    transform: translateX(100%); /* Deslize para a próxima página */
+}
+
+/* Alteração de fundo e texto no tema claro */
+body.light-mode .content {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Alteração de fundo e texto no tema escuro */
+body.dark-mode .content {
+    background-color: #333;
+    color: #ddd;
+}
